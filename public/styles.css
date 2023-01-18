@@ -114,10 +114,10 @@ a {
 
 .one {
     clip-path: polygon(0 0, 0 50%, 100% 100%, 100% 0);
-    background-image: url(/shizo-1.jpg);
+    background-image: url(./shizo-1.jpg);
 }
 
 .two {
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 50%);
-    background-image: url(/shizo-2.jpg);
+    background-image: url(./shizo-2.jpg);
 }
