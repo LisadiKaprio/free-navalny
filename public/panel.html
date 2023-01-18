@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Viewer Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        var startDate = new Date("January 17, 2021 21:00:00"); 
+
+        const dayInMilliseconds = 1000 * 60 * 60 * 24;
+        const hourInMilliseconds = 1000 * 60 * 60;
+        const minuteInMilliseconds = 1000 * 60;
+        const secondInMilliseconds = 1000;
+
+        var timer = setInterval(function() {
+            var currentDate = new Date(); 
+            var timeDiff = currentDate - startDate;
+            var days = Math.floor(timeDiff / dayInMilliseconds);
+            var remainder = timeDiff % dayInMilliseconds;
+            var hours = Math.floor(remainder / hourInMilliseconds);
+            remainder = remainder % hourInMilliseconds;
+            var minutes = Math.floor(remainder / minuteInMilliseconds);
+            var seconds = Math.floor((remainder % minuteInMilliseconds) / secondInMilliseconds);
+            document.getElementById("timer").innerHTML = days + " days " + hours + " : " + minutes + " : " + seconds;
+        }, 1000);
+    </script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style>
+</head>
+
+<body>
+    <div id="app" class="full-height"></div>
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="viewer.js" type="text/javascript"></script> -->
+    <div class="image one"></div>
+    <div class="main-section">
+        <h2 class="header">NAVALNY HAS BEEN IMPRISONED FOR</h2>
+        <div id="timer"></p>
+    </div>
+    <!-- <div>
+        <input type="button" id="cycle" disabled="disabled" value="Yes, I would" />
+    </div> -->
+    <!-- <div style="float: left; position: relative; left: 50%">
+        <div id="color"
+            style="border-radius: 50px; transition: background-color 0.5s ease; margin-top: 30px; width: 100px; height: 100px; background-color: #6441A4; float: left; position: relative; left: -50%">
+        </div>
+    </div>
+    <div id="list"> -->
+    <!-- </div> -->
+    <a href="https://free.navalny.com/" target="_blank" rel="noopener">Visit page</a>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "certificateExceptions": [],
+  "extensionViews": [
+    {
+      "channelId": "66972449",
+      "configurationAnchor": "panel",
+      "displayChannelName": "lisadikaprio",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "1",
+      "isPopout": false,
+      "label": "Panel",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "panel",
+      "viewerType": "Broadcaster"
+    }
+  ],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "Anonymous",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://localhost:8080/config.html",
+    "configurationLocation": "none",
+    "description": "A simple count-up timer, showing for how long Navalny has spent in prison already, after he came back to Russia. Similar to the one on the official https://free.navalny.com/ page, this is a powerful reminder of what's currently happening to Putin’s main political opponent.",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "",
+    "iconUrls": {},
+    "id": "lwywr6ow3md4pkf9qgcugt6gy60gvn",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "Free Navalny",
+    "panelHeight": 300,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": false,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "Timer counting up how long Navalny has been imprisoned",
+    "supportEmail": "lisadikaprio@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerSummary": "",
+    "viewerUrl": "https://localhost:8080/panel.html",
+    "viewerUrls": {
+      "panel": "https://localhost:8080/panel.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://localhost:8080/panel.html",
+        "height": 300,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost:8080/config.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "public",
+  "name": "Free Navalny",
+  "usingRandomFrontendHostingPort": false,
+  "version": 3
+}

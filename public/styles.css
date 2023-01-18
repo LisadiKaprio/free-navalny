@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-section {
+    background-color: rgb(38, 38, 38);
+    padding: 2.5rem 1rem;
+    background-image: none;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: left center, right center;
+}
+.header {
+    font-size: 2rem;
+    /* line-height: 1; */
+    color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#timer {
+    font-weight: 700;
+    color: rgb(255, 51, 0);
+    font-size: 1.5rem;
+    line-height: 1.9375rem;
+}
+
+.image {
+    transform: skewX(5deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    width: 105%;
+    margin-left: 0px;
+    filter: grayscale(100%);
+}
+
+.one {
+    background-image: url(/assets/shizo-1.jpg);
+}
