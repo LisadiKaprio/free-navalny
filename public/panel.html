@@ -4,31 +4,6 @@
 <head>
     <title>Viewer Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript">
-        var countUpDate = new Date("January 17, 2021 21:00:00").getTime();
-        var x = setInterval(updateTimer, 1000);
-        var oneSecond = 1000;
-        var oneMinute = oneSecond * 60;
-        var oneHour = oneMinute * 60;
-        var oneDay = oneHour * 24;
-        
-        function updateTimer() {
-            var now = new Date().getTime();
-            var distance = now - countUpDate;
-            var time = {
-            days: Math.floor(distance / oneDay),
-            hours: Math.floor((distance % oneDay) / oneHour),
-            minutes: Math.floor((distance % oneHour) / oneMinute),
-            seconds: Math.floor((distance % oneMinute) / oneSecond)
-            }
-
-        time.hours = time.hours < 10 ? "0" + time.hours : time.hours;
-        time.minutes = time.minutes < 10 ? "0" + time.minutes : time.minutes;
-        time.seconds = time.seconds < 10 ? "0" + time.seconds : time.seconds;
-
-        document.getElementById("timer").innerHTML = `${time.days} days ${time.hours}:${time.minutes}:${time.seconds}`;
-    }
-    </script>
     <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style>
 </head>
 
@@ -36,7 +11,7 @@
     <div id="app" class="full-height"></div>
     <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
     <script src="jquery-3.3.1.min.js"></script>
-    <!-- <script src="viewer.js" type="text/javascript"></script> -->
+    <script src="helper.js" type="text/javascript"></script>
     <div class="container">
         <div class="image one"></div>
         <div class="main-section">
