@@ -24,6 +24,7 @@ body {
 
 .container {
     height: 300px;
+    width: 320px;
 }
 
 .main-section {
@@ -37,7 +38,7 @@ body {
     display: flex; 
     flex-direction: column; 
     align-content: center; 
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .main-section *{
@@ -46,11 +47,11 @@ body {
 .header {
     margin-top: 5px;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     /* line-height: 1; */
     color: rgb(233, 233, 233);
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
     font-weight: 300;
 }
 .header .navalny {
@@ -62,11 +63,11 @@ body {
     font-weight: 700;
     color: rgb(255, 51, 0);
     font-size: 18px;
-    margin-bottom: 0.75rem;
     /* line-height: 1.9375rem; */
 }
 
 a {
+    margin-top: 0.75rem;
     display: inline-block;
     background-color: rgb(255, 51, 0);
     color: rgb(255, 255, 255);
@@ -84,12 +85,27 @@ a {
     --x-skew-y: 0;
     --x-scale-x: 1;
     --x-scale-y: 1;
-    transform: translate3d(var(--x-translate-x),var(--x-translate-y),0) rotate(var(--x-rotate)) skewX(var(--x-skew-x)) skewY(var(--x-skew-y)) scaleX(var(--x-scale-x)) scaleY(var(--x-scale-y));
     transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, fill 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, stroke 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
     --x-ring-color: #FFA489;
     --x-ring-shadow: var(--x-ring-inset, ) 0 0 0 none var(--x-ring-color);
     box-shadow: var(--x-ring-shadow,0 0 #0000),var(--x-shadow,0 0 #0000);
+    
+    position: absolute;
+    top: 195px;
+    left: -15px;
+    z-index: 99;
+    transform: 
+    translate3d(var(--x-translate-x),var(--x-translate-y),0) 
+    rotate(var(--x-rotate)) skewX(var(--x-skew-x)) 
+    skewY(var(--x-skew-y)) scaleX(var(--x-scale-x)) 
+    scaleY(var(--x-scale-y)) 
+    translateX(35%);
 
+}
+
+.lower-button{
+    top: 230px;
+    left: -35px;
 }
   
   /* visited link */
